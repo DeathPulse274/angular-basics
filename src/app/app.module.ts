@@ -6,6 +6,7 @@ import { SelectorComponent } from './selector/selector.component';
 import { ClassSelectorComponent } from './class-selector/class-selector.component';
 import { AttributeSelectorComponent } from './attribute-selector/attribute-selector.component';
 import { ServerComponent } from './server/server.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ServerComponent } from './server/server.component';
     ServerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
