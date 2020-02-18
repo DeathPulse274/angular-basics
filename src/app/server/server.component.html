@@ -1,1 +1,6 @@
-<button [disabled]="!allowNewServer" class="btn btn-primary btn-fill"> Add Server</button>
+<!--Property Binding replacement for string interpolation-->
+<p [innerText]="serverCreationStatus"></p>
+<!--Property Binding replacement for string interpolation-->
+
+
+<button (click)="onCreateServer()" [disabled]="!allowNewServer" class="btn btn-primary btn-fill"> Add Server</button>
